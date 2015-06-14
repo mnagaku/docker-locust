@@ -16,6 +16,6 @@ RUN sed -i".bak" -e 's/\/\/archive.ubuntu.com/\/\/ftp.jaist.ac.jp/g' /etc/apt/so
 
 EXPOSE 5557
 EXPOSE 5558
-EXPOSE 8080
+EXPOSE 8089
 
 CMD tail -f /dev/null
