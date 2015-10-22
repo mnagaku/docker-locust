@@ -10,7 +10,7 @@ ENV LC_ALL en_US.UTF-8
 RUN sed -i".bak" -e 's/\/\/archive.ubuntu.com/\/\/ftp.jaist.ac.jp/g' /etc/apt/sources.list &&\
     apt-get update &&\
     apt-get upgrade -y &&\
-    apt-get install -y build-essential python-dev python-pip wget &&\
+    apt-get install -y build-essential python-dev python-pip python-pycurl wget &&\
     pip install pyzmq &&\
     pip install locustio
 
